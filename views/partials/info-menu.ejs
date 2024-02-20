@@ -1,0 +1,9 @@
+<% for (let i = 0; i < detalleProduct.length; i++) { %>
+    <a href="/detalle/<%= detalleProduct[i].id %>">
+        <h4><%= detalleProduct[i].nombre %></h4>
+        <p class="ps-text-grey">
+            <%= detalleProduct[i].detalle %> U$S <%= detalleProduct[i].precio %>
+        </p>
+        <br />
+    </a>
+<% } %>
